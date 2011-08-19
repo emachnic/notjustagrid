@@ -13,8 +13,9 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "notjustagrid"
 
-  s.add_dependency 'rake',  '~> 0.9.2'
   s.add_dependency 'rails', '~> 3.0'
+  
+  s.add_development_dependency 'rake', '~> 0.9.2'
   s.add_development_dependency 'sass', '~> 3.1.7'
 
   s.files         = `git ls-files`.split("\n")
