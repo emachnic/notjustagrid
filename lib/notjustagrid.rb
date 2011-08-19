@@ -1,6 +1,4 @@
-require "notjustagrid/version"
-require 'notjustagrid/engine'
-
 module Notjustagrid
-  # Your code goes here...
+  require 'notjustagrid/engine'
+  require "notjustagrid/version"
 end
