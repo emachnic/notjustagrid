@@ -11,16 +11,16 @@ module Notjustagrid
         
         say_status("copying", "stylesheets", :green)
         directory('stylesheets/src', 'public/stylesheets')
-        # copy_file 'stylesheets/src/forms.css',    'public/stylesheets/forms.css'
-        # copy_file 'stylesheets/src/grid1200.css', 'public/stylesheets/grid1200.css'  
-        # copy_file 'stylesheets/src/grid1380.css', 'public/stylesheets/grid1380.css'  
-        # copy_file 'stylesheets/src/grid1500.css', 'public/stylesheets/grid1500.css'  
-        # copy_file 'stylesheets/src/grid960.css',  'public/stylesheets/grid960.css'   
-        # copy_file 'stylesheets/src/helpers.css',  'public/stylesheets/helpers.css'   
-        # copy_file 'stylesheets/src/reset.css',    'public/stylesheets/reset.css'     
-        # copy_file 'stylesheets/src/tables.css',   'public/stylesheets/tables.css'    
-        # copy_file 'stylesheets/src/type.css',     'public/stylesheets/type.css'      
-        # copy_file 'stylesheets/src/ux.css',       'public/stylesheets/ux.css'
+        # copy_file 'stylesheets/src/forms.css',    'public/stylesheets/notjustagrid/forms.css'
+        # copy_file 'stylesheets/src/grid1200.css', 'public/stylesheets/notjustagrid/grid1200.css'  
+        # copy_file 'stylesheets/src/grid1380.css', 'public/stylesheets/notjustagrid/grid1380.css'  
+        # copy_file 'stylesheets/src/grid1500.css', 'public/stylesheets/notjustagrid/grid1500.css'  
+        # copy_file 'stylesheets/src/grid960.css',  'public/stylesheets/notjustagrid/grid960.css'   
+        # copy_file 'stylesheets/src/helpers.css',  'public/stylesheets/notjustagrid/helpers.css'   
+        # copy_file 'stylesheets/src/reset.css',    'public/stylesheets/notjustagrid/reset.css'     
+        # copy_file 'stylesheets/src/tables.css',   'public/stylesheets/notjustagrid/tables.css'    
+        # copy_file 'stylesheets/src/type.css',     'public/stylesheets/notjustagrid/type.css'      
+        # copy_file 'stylesheets/src/ux.css',       'public/stylesheets/notjustagrid/ux.css'
         
         say_status("copying", "images", :green)
         directory('images/notjustagrid', 'public/images/notjustagrid')
