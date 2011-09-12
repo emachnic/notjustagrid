@@ -1,4 +1,4 @@
-/* Not Just a Grid v1.1 - June 2011 - (c) 2011 Al Redpath / Outrageous Creations! Licenced under an MIT Licence */
+/* Not Just a Grid v1.0 (c) 2011 Al Redpath / Outrageous Creations! Licenced under an MIT Licence*/
 /* ---------------------------------------------------------------------------- */
 /* Filetype hint icons -------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- */
@@ -7,31 +7,31 @@ a {
   &[href^='mailto:'] {
     padding-right: 10px;
     background: transparent url(<%= asset_path 'notjustagrid/icons/icon-email-tiny.png' %>) no-repeat right top; }
-  &[href$=' {
-    &.pdf'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-pdf-tiny.png' %>) no-repeat right top; }
-    &.xls'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-excel-tiny.png' %>) no-repeat right top; }
-    &.ppt'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-powerpoint-tiny.png' %>) no-repeat right top; }
-    &.doc'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-word-tiny.png' %>) no-repeat right top; }
-    &.rtf'], &.txt'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-document-tiny.png' %>) no-repeat right top; }
-    &.wmv'], &.mov'], &.avi'], &.mpg'], &.flv'], &.f4v'], &.rm'], &.ram'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-video-tiny.png' %>) no-repeat right top; }
-    &.swf'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-flash-tiny.png' %>) no-repeat right top; }
-    &.rss'] {
-      padding-right: 10px;
-      background: transparent url(<%= asset_path 'notjustagrid/icons/icon-rss-tiny.png' %>) no-repeat right top; } } }
+  &[href$='.pdf'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-pdf-tiny.png' %>) no-repeat right top; }
+  &[href$='.xls'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-excel-tiny.png' %>) no-repeat right top; }
+  &[href$='.ppt'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-powerpoint-tiny.png' %>) no-repeat right top; }
+  &[href$='.doc'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-word-tiny.png' %>) no-repeat right top; }
+  &[href$='.rtf'], &[href$='.txt'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-document-tiny.png' %>) no-repeat right top; }
+  &[href$='.wmv'], &[href$='.mov'], &[href$='.avi'], &[href$='.mpg'], &[href$='.swf'], &[href$='.flv'], &[href$='.f4v'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-video-tiny.png' %>) no-repeat right top; }
+  &[href$='.rss'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-rss-tiny.png' %>) no-repeat right top; }
+  &[href$='.rm'] {
+    padding-right: 10px;
+    background: transparent url(<%= asset_path 'notjustagrid/icons/icon-video-tiny.png' %>) no-repeat right top; }
+}
 
 /* ---------------------------------------------------------------------------- */
 /* error boxes ---------------------------------------------------------------- */
@@ -44,9 +44,9 @@ a {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
   margin: 20px;
   text-align: left;
   position: relative; }
@@ -77,8 +77,8 @@ a {
 
 .warning div, .error div, .success div, .question div {
   border: 10px solid transparent;
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
   position: absolute;
   bottom: -25px;
   left: 75px; }
@@ -120,12 +120,12 @@ div.pagescontainer {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-right: 1px solid rgba(0, 0, 0, 0.4);
     border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     background: #cccccc url(<%= asset_path 'notjustagrid/misc/transoverlay-matte.png' %>) repeat-x; }
   span {
@@ -145,18 +145,18 @@ div.pagescontainer {
       border-top: 1px solid rgba(255, 255, 255, 0.4);
       border-right: 1px solid rgba(0, 0, 0, 0.4);
       border-left: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
       -moz-border-radius: 15px;
       -webkit-border-radius: 15px;
-      border-radius: 15px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
       background: #cccccc url(<%= asset_path 'notjustagrid/misc/transoverlay-matte.png' %>) repeat-x; } }
   a {
     &:hover, &:active {
       background-color: #afc243;
-      color: #fff !important;
+      color: white !important;
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5); } }
   span {
     &.ghost {
@@ -166,9 +166,9 @@ div.pagescontainer {
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       background-color: #fff;
       color: #ccc;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
     &.current {
       background-color: #5c7d98;
       color: #fff;
